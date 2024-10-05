@@ -1,1 +1,1 @@
-Made for data entry for project 2 for UAlbany ISCI 201
+Made for data entry for project 2 for UAlbany ICSI 201
