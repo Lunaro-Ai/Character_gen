@@ -13,46 +13,33 @@ public class dataMaker {
         fileName = keyboard.nextLine();
         BufferedWriter input = new BufferedWriter(new FileWriter(fileName, true));
 
+
+        String[] questions = {"Character name: ", "Character type: ", "Character race: ",
+                "Character class: ", "Character health: ", "Character Power level: ", "Equip weapon: ",
+                "Attack ability: "};
+
         do {
 
-            //Name
-            System.out.println("Enter character name: ");
-            String characterName = keyboard.nextLine();
-            input.write("Character name: " + characterName + "\n");
 
-            //Type
-            System.out.println("Enter type");
-            String characterType = keyboard.nextLine();
-            input.write("Character type: " + characterType + "\n");
+            for (int i = 0; i < questions.length; i++) {
+                System.out.println(questions[i]);
 
 
-            //Race
-            System.out.println("Enter character Race: ");
-            String characterRace = keyboard.nextLine();
-            input.write("Character race: " + characterRace + "\n");
+                if (i == 4) {
+                    int healthPoints = keyboard.nextInt();
+                    input.write("Health (HP): " + healthPoints + "\n");
+                    keyboard.nextLine();
+                } else if (i == 5) {
+                    double powerLvl = keyboard.nextDouble();
+                    input.write("Power level: " + powerLvl + "\n");
+                    keyboard.nextLine();
+                } else {
+                    String answers = keyboard.nextLine();
+                    input.write( answers + " \n");
+                }
+            }
 
-
-            //Class
-            System.out.println("Enter character class: ");
-            String characterClass = keyboard.nextLine();
-            input.write("Character class: " + characterClass + "\n");
-
-            System.out.println("Enter Health points (HP) of character: ");
-            int healthPoints = keyboard.nextInt();
-            input.write("Health points: " + healthPoints + "\n");
-            // Consume newline
-            keyboard.nextLine();
-
-            System.out.println("Enter power: ");
-            double power = keyboard.nextDouble();
-            input.write("Power: " + power + "\n");
-            // Consume newline
-            keyboard.nextLine();
-
-            System.out.println("Enter attack ability");
-            String attackAbility = keyboard.nextLine();
-            input.write("Attack ability: " + attackAbility + "\n");
-
+            // New line
             input.write("\n");
 
             System.out.println("Wound You like to make another entry? (Y or N)");
