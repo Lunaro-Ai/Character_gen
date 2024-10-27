@@ -20,26 +20,32 @@ public class dataMaker {
 
         do {
 
+            StringBuilder characterData = new StringBuilder();
 
             for (int i = 0; i < questions.length; i++) {
-                System.out.println(questions[i]);
-
+                System.out.print(questions[i]);
+                String answer;
 
                 if (i == 4) {
                     int healthPoints = keyboard.nextInt();
-                    input.write("Health (HP): " + healthPoints + "\n");
+                    characterData.append(healthPoints);
                     keyboard.nextLine();
                 } else if (i == 5) {
                     double powerLvl = keyboard.nextDouble();
-                    input.write("Power level: " + powerLvl + "\n");
+                    characterData.append(powerLvl);
                     keyboard.nextLine();
                 } else {
-                    String answers = keyboard.nextLine();
-                    input.write( answers + " \n");
+                     answer = keyboard.nextLine().trim();
+                     characterData.append(answer);
+                }
+
+                if (i < questions.length - 1) {
+                    characterData.append(",");
                 }
             }
 
-            // New line
+
+            input.write(characterData.toString());
             input.write("\n");
 
             System.out.println("Wound You like to make another entry? (Y or N)");
