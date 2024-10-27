@@ -1,0 +1,14 @@
+Lae'zel,Humanoid,Githyanki,Fighter,120,671.0,Silver Sword of the Astral Plane,Soulbreaker
+Shawdowheart,Humanoid,Half-Elf,Cleric,80,428.0,Shar's Spear of Night,Shar's Darkness
+Astarion,Humanoid,Elf,Rouge,65,537.0,Rhapsody,Ascendant Bite
+Gale,Humanoid,Human,Wizard,55,867.0,Markoheshkir,Fireball
+Karlach,Humanoid,Tiefling,Barbarain,100,678.0,Nyrulna,Zephyr Flash
+Minthara,Humanoid,Loth-Sworn-Drow,Paladin,87,643.0,Sword of Chaos,Divine smite
+Raphael,fiend,Cambion,Sorcerer,666,1500.0,Claws,Fireball
+Mizora,Fiend,Cambion,Socerer,75,868.0,Infernal Rapier,Metamagic
+Orin the Red,Humanoid,Changeling,Rouge,101,812.0,Bloodthrist,Power Word Kill
+Wyll,Humanoid,Human,Warlock,77,501.0,Kinfe of Undermoution King,Eldridge blast
+The Dark Urge,Humanoid,Dragonborn,Monk,89,626.0,Fist,Furry of Blows
+Ch'r'ai'W'wargaz,Humanoid,Githyanki,Fighter,150,678.0,Githyanki Greatsword,Mind-claw of Tu'narath
+Vlaakith CLVII,Humanoid,Undead,Lich-Queen,442,2200.0,Silver Greatsword,Wish
+Ketheric Thorm,Humanoid,Undead,Paladin,218,640.0,Warhammer,Divine smite
